@@ -335,6 +335,22 @@
     "symfony/translation-contracts": {
         "version": "v2.4.0"
     },
+    "symfony/twig-bridge": {
+        "version": "5.4.x-dev"
+    },
+    "symfony/twig-bundle": {
+        "version": "5.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.4",
+            "ref": "ba5388319da939fbb8a5ffab45179801a936da0d"
+        },
+        "files": [
+            "config/packages/twig.yaml",
+            "templates/base.html.twig"
+        ]
+    },
     "symfony/uid": {
         "version": "5.4.x-dev"
     },

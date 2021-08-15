@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1890ff" />
+    <link rel="icon" href="{{ asset('favicon.svg') }}" />
+    <link rel="manifest" href="{{ asset('manifest-frontend.json') }}" />
+    <title>{% block title %}{% if page_title is defined %}{{ page_title }}{% endif %}{% endblock %}</title>
+    {% if meta_description is defined %}<meta name="description" content="{{ meta_description }}" />{% endif %}
+    {% if meta_keyword is defined %}<meta name="keywords" content="{{ meta_keyword }}" />{% endif %}
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('frontend', null, 'frontend') }}
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('frontend', null, 'frontend') }}
+{% endblock %}
+</body>
+</html>

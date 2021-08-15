@@ -33,4 +33,5 @@ return [
     EveryWorkflow\PimBundle\EveryWorkflowPimBundle::class => ['all' => true],
     EveryWorkflow\SalesOrderBundle\EveryWorkflowSalesOrderBundle::class => ['all' => true],
     EveryWorkflow\EcommerceBundle\EveryWorkflowEcommerceBundle::class => ['all' => true],
+    Symfony\Bundle\TwigBundle\TwigBundle::class => ['all' => true],
 ];

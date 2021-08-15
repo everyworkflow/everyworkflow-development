@@ -35,7 +35,8 @@
             "@EveryWorkflow/FrontendBundle/*": ["everyworkflow/FrontendBundle/Resources/assets/*"],
             "@EveryWorkflow/CustomerBundle/*": ["everyworkflow/CustomerBundle/Resources/assets/*"],
             "@EveryWorkflow/CatalogCategoryBundle/*": ["everyworkflow/CatalogCategoryBundle/Resources/assets/*"],
-            "@EveryWorkflow/CatalogProductBundle/*": ["everyworkflow/CatalogProductBundle/Resources/assets/*"]
+            "@EveryWorkflow/CatalogProductBundle/*": ["everyworkflow/CatalogProductBundle/Resources/assets/*"],
+            "@EveryWorkflow/SalesOrderBundle/*": ["everyworkflow/SalesOrderBundle/Resources/assets/*"]
         }
     },
     "include": [

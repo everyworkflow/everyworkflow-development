@@ -2,18 +2,33 @@ security:
     # https://symfony.com/doc/current/security/experimental_authenticators.html
     enable_authenticator_manager: true
     # https://symfony.com/doc/current/security.html#c-hashing-passwords
+    # password_hashers:
+    #     Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
     password_hashers:
-        Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
+      EveryWorkflow\UserBundle\Security\User\WebserviceUser:
+        algorithm: bcrypt
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        users_in_memory: { memory: null }
+        # users_in_memory: { memory: null }
+        webservice:
+          id : EveryWorkflow\UserBundle\Security\User\WebserviceUserProvider
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
+
+        login:
+          pattern: ^/api/login
+          stateless: true
+#          anonymous: true
+          json_login:
+              check_path: /api/login_check
+              success_handler: lexik_jwt_authentication.handler.authentication_success
+              failure_handler: lexik_jwt_authentication.handler.authentication_failure
+
         main:
-            lazy: true
-            provider: users_in_memory
+            # lazy: true
+            # provider: users_in_memory
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
@@ -24,5 +39,7 @@ security:
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
+      - { path: ^/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+      - { path: ^/api/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }

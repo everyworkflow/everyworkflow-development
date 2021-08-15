@@ -1,0 +1,21 @@
+{
+  "short_name": "Admin - EveryWorkflow",
+  "name": "A admin panel for every workflow project",
+  "icons": [
+    {
+      "src": "favicon-192.png",
+      "purpose": "any maskable",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon.svg",
+      "purpose": "any maskable",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "/admin/",
+  "display": "standalone",
+  "theme_color": "#1890ff",
+  "background_color": "#ffffff"
+}
