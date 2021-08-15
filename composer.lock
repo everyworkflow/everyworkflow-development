@@ -4,8 +4,1957 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be9b50602320ac792777e8c5cc03ccc7",
+    "content-hash": "ea409d439e167f8a166b2ffce9c7b25b",
     "packages": [
+        {
+            "name": "doctrine/annotations",
+            "version": "1.13.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "5b668aef16090008790395c02c893b1ba13f7e08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5b668aef16090008790395c02c893b1ba13f7e08",
+                "reference": "5b668aef16090008790395c02c893b1ba13f7e08",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "ext-tokenizer": "*",
+                "php": "^7.1 || ^8.0",
+                "psr/cache": "^1 || ^2 || ^3"
+            },
+            "require-dev": {
+                "doctrine/cache": "^1.11 || ^2.0",
+                "doctrine/coding-standard": "^6.0 || ^8.1",
+                "phpstan/phpstan": "^0.12.20",
+                "phpunit/phpunit": "^7.5 || ^8.0 || ^9.1.5",
+                "symfony/cache": "^4.4 || ^5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "https://www.doctrine-project.org/projects/annotations.html",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/annotations/issues",
+                "source": "https://github.com/doctrine/annotations/tree/1.13.2"
+            },
+            "time": "2021-08-05T19:00:23+00:00"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "e864bbf5904cb8f5bb334f99209b48018522f042"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/e864bbf5904cb8f5bb334f99209b48018522f042",
+                "reference": "e864bbf5904cb8f5bb334f99209b48018522f042",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0",
+                "phpstan/phpstan": "^0.11.8",
+                "phpunit/phpunit": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "https://www.doctrine-project.org/projects/lexer.html",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "lexer",
+                "parser",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/lexer/issues",
+                "source": "https://github.com/doctrine/lexer/tree/1.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-25T17:44:05+00:00"
+        },
+        {
+            "name": "everyworkflow/admin-panel-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/AdminPanelBundle",
+                "reference": "3630ebe85887fd9b0ac5de74fac1198eecdbd57a"
+            },
+            "require": {
+                "everyworkflow/core-bundle": "dev-main",
+                "everyworkflow/data-form-bundle": "dev-main",
+                "everyworkflow/data-grid-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\AdminPanelBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\AdminPanelBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Admin panel bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/base-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/BaseBundle",
+                "reference": "6217350a0d6ec06c97fb21f5648c63bd0924d2d6"
+            },
+            "require": {
+                "everyworkflow/admin-panel-bundle": "dev-main",
+                "everyworkflow/core-bundle": "dev-main",
+                "everyworkflow/data-form-bundle": "dev-main",
+                "everyworkflow/data-grid-bundle": "dev-main",
+                "everyworkflow/developer-bundle": "dev-main",
+                "everyworkflow/eav-bundle": "dev-main",
+                "everyworkflow/import-export-bundle": "dev-main",
+                "everyworkflow/mongo-bundle": "dev-main",
+                "everyworkflow/scope-bundle": "dev-main",
+                "everyworkflow/setting-bundle": "dev-main",
+                "everyworkflow/user-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\BaseBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\BaseBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Base bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/catalog-category-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/CatalogCategoryBundle",
+                "reference": "c25f78691150ee293c4b6ed89b029f7671699a55"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\CatalogCategoryBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\CatalogCategoryBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Catalog category bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/catalog-product-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/CatalogProductBundle",
+                "reference": "965c044a416bde7ff3af5ffa52afe3dc3915de78"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\CatalogProductBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\CatalogProductBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Catalog product bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/cms-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/CmsBundle",
+                "reference": "861098562992c8ac459dd99dc315616294e7ad45"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main",
+                "everyworkflow/dam-bundle": "dev-main",
+                "everyworkflow/frontend-bundle": "dev-main",
+                "everyworkflow/page-builder-bundle": "dev-main",
+                "everyworkflow/page-bundle": "dev-main",
+                "everyworkflow/static-block-bundle": "dev-main",
+                "everyworkflow/url-rewrite-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\CmsBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\CmsBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Cms bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/core-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/CoreBundle",
+                "reference": "5db04a1b6a577d7b761d16d25ac47e1ca6762f2c"
+            },
+            "require": {
+                "doctrine/annotations": "^1.11",
+                "nelmio/cors-bundle": "^2.1",
+                "opis/json-schema": "^1.0",
+                "php": "^8.0",
+                "symfony/cache": "5.4.x",
+                "symfony/uid": "5.4.x",
+                "symfony/webpack-encore-bundle": "^1.11"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\CoreBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\CoreBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Core bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/crm-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/CrmBundle",
+                "reference": "646b648831e2f6b82b86aa48744cd9bd33b02c52"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main",
+                "everyworkflow/cms-bundle": "dev-main",
+                "everyworkflow/customer-bundle": "dev-main",
+                "everyworkflow/dam-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\CrmBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\CrmBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Crm bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/customer-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/CustomerBundle",
+                "reference": "100b3a5f867fbcf598551b96957f30e8f9ee6a33"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\CustomerBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\CustomerBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Customer bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/dam-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/DamBundle",
+                "reference": "a607a5ee62cabe8e55419666b43351dbe1e95187"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main",
+                "everyworkflow/media-manager-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\DamBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\DamBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Dam bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/data-form-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/DataFormBundle",
+                "reference": "665b2bf5f8361ef44570f36b9404a7b5c066472b"
+            },
+            "require": {
+                "everyworkflow/core-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\DataFormBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\DataFormBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Data form bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/data-grid-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/DataGridBundle",
+                "reference": "531b74b88314a626febc5bcb2b0fc282520bdf0b"
+            },
+            "require": {
+                "everyworkflow/core-bundle": "dev-main",
+                "everyworkflow/data-form-bundle": "dev-main",
+                "everyworkflow/mongo-bundle": "dev-main",
+                "nesbot/carbon": "^2.43"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\DataGridBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\DataGridBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Data grid bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/developer-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/DeveloperBundle",
+                "reference": "99a7484c8c0f5359f3281c6eba536c99e9376a92"
+            },
+            "require": {
+                "everyworkflow/core-bundle": "dev-main",
+                "symfony/console": "5.4.*",
+                "symfony/finder": "^4.4|^5.0|^6.0",
+                "twig/twig": "^3.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\DeveloperBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\DeveloperBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Developer bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/eav-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/EavBundle",
+                "reference": "295e1250abaf88545b39eced7840517ad96c4e0f"
+            },
+            "require": {
+                "everyworkflow/core-bundle": "dev-main",
+                "everyworkflow/data-form-bundle": "dev-main",
+                "everyworkflow/data-grid-bundle": "dev-main",
+                "everyworkflow/mongo-bundle": "dev-main",
+                "nesbot/carbon": "^2.43"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\EavBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\EavBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Eav bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/ecommerce-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/EcommerceBundle",
+                "reference": "accaddc841ac19a0b2184b3b264fd64c0a108736"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main",
+                "everyworkflow/crm-bundle": "dev-main",
+                "everyworkflow/pim-bundle": "dev-main",
+                "everyworkflow/sales-order-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\EcommerceBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\EcommerceBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Ecommerce bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/frontend-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/FrontendBundle",
+                "reference": "dcb1778c7459c32b6fd3da2fe6eb1ca1403a2a80"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main",
+                "everyworkflow/page-builder-bundle": "dev-main",
+                "everyworkflow/page-bundle": "dev-main",
+                "everyworkflow/static-block-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\FrontendBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\FrontendBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Frontend bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/import-export-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/ImportExportBundle",
+                "reference": "0ccccd2af3d7049b91e0a585371712ddbfdd74c2"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\ImportExportBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\ImportExportBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Import export bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/media-manager-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/MediaManagerBundle",
+                "reference": "0cb22a58b5498b9b237f5390c8b375467e7a18dc"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main",
+                "nesbot/carbon": "^2.43",
+                "symfony/finder": "^4.4|^5.0|^6.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\MediaManagerBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\MediaManagerBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Media manager bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/mongo-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/MongoBundle",
+                "reference": "ee1b4a113c5b750df840db1f42f2d52b3a5ec439"
+            },
+            "require": {
+                "everyworkflow/core-bundle": "dev-main",
+                "ext-mongodb": "*",
+                "mongodb/mongodb": "^1.9",
+                "nesbot/carbon": "^2.43",
+                "symfony/console": "5.4.*"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\MongoBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\MongoBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Mongo bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/page-builder-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/PageBuilderBundle",
+                "reference": "343f5c4b83cddac3830dc215fff362eb9941c59e"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\PageBuilderBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\PageBuilderBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Page builder bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/page-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/PageBundle",
+                "reference": "f8b0c6a693feb6dc849af155fd237ca51ffdde3d"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\PageBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\PageBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Page bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/pim-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/PimBundle",
+                "reference": "cf48cce2d5bb2ea357deb24559f7fa0d5870a2a1"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main",
+                "everyworkflow/catalog-category-bundle": "dev-main",
+                "everyworkflow/catalog-product-bundle": "dev-main",
+                "everyworkflow/cms-bundle": "dev-main",
+                "everyworkflow/dam-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\PimBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\PimBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Pim bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/sales-order-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/SalesOrderBundle",
+                "reference": "73a0f327c25d8977d72f7c5dde239c8d935b9b63"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\SalesOrderBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\SalesOrderBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Sales order bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/scope-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/ScopeBundle",
+                "reference": "7a05527949bbf3dc1b7188e3e3338917436cfe0c"
+            },
+            "require": {
+                "everyworkflow/core-bundle": "dev-main",
+                "everyworkflow/mongo-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\ScopeBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\ScopeBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Scope bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/setting-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/SettingBundle",
+                "reference": "ba1fc0a681d5c0d710cccb61900c500e54faec6a"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\SettingBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\SettingBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Setting bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/static-block-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/StaticBlockBundle",
+                "reference": "dff46acbf970fa5ce91958d3f97a6ef5b8267828"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\StaticBlockBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\StaticBlockBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Static block bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/url-rewrite-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/UrlRewriteBundle",
+                "reference": "d2c0ca831a09bf5800a3d815cdb62f22ff64fa5c"
+            },
+            "require": {
+                "everyworkflow/base-bundle": "dev-main"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\UrlRewriteBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\UrlRewriteBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "Url rewrite bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "everyworkflow/user-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "everyworkflow/UserBundle",
+                "reference": "7f67c345dc65080fcad0405089b9f35061d0c20f"
+            },
+            "require": {
+                "everyworkflow/core-bundle": "dev-main",
+                "everyworkflow/data-grid-bundle": "dev-main",
+                "everyworkflow/eav-bundle": "dev-main",
+                "lexik/jwt-authentication-bundle": "^2.11",
+                "symfony/console": "5.4.*",
+                "symfony/security-bundle": "5.4.x"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "EveryWorkflow\\UserBundle\\": "./"
+                },
+                "exclude-from-classmap": [
+                    "Resources",
+                    "Tests"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "EveryWorkflow\\UserBundle\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EveryWorkflow",
+                    "email": "everyworkflow@gmail.com"
+                }
+            ],
+            "description": "User bundle for every workflow project.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jean85/pretty-package-versions",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jean85/pretty-package-versions.git",
+                "reference": "694492c653c518456af2805f04eec445b997ed1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/694492c653c518456af2805f04eec445b997ed1f",
+                "reference": "694492c653c518456af2805f04eec445b997ed1f",
+                "shasum": ""
+            },
+            "require": {
+                "composer-runtime-api": "^2.0.0",
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.17",
+                "jean85/composer-provided-replaced-stub-package": "^1.0",
+                "phpstan/phpstan": "^0.12.66",
+                "phpunit/phpunit": "^7.5|^8.5|^9.4",
+                "vimeo/psalm": "^4.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jean85\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alessandro Lai",
+                    "email": "alessandro.lai85@gmail.com"
+                }
+            ],
+            "description": "A library to get pretty versions strings of installed dependencies",
+            "keywords": [
+                "composer",
+                "package",
+                "release",
+                "versions"
+            ],
+            "support": {
+                "issues": "https://github.com/Jean85/pretty-package-versions/issues",
+                "source": "https://github.com/Jean85/pretty-package-versions/tree/2.0.4"
+            },
+            "time": "2021-05-26T08:46:42+00:00"
+        },
+        {
+            "name": "lcobucci/clock",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/clock.git",
+                "reference": "353d83fe2e6ae95745b16b3d911813df6a05bfb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/clock/zipball/353d83fe2e6ae95745b16b3d911813df6a05bfb3",
+                "reference": "353d83fe2e6ae95745b16b3d911813df6a05bfb3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.17",
+                "lcobucci/coding-standard": "^6.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
+                "phpunit/php-code-coverage": "9.1.4",
+                "phpunit/phpunit": "9.3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\Clock\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Cobucci",
+                    "email": "lcobucci@gmail.com"
+                }
+            ],
+            "description": "Yet another clock abstraction",
+            "support": {
+                "issues": "https://github.com/lcobucci/clock/issues",
+                "source": "https://github.com/lcobucci/clock/tree/2.0.x"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/lcobucci",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lcobucci",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-08-27T18:56:02+00:00"
+        },
+        {
+            "name": "lcobucci/jwt",
+            "version": "4.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/jwt.git",
+                "reference": "71cf170102c8371ccd933fa4df6252086d144de6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/71cf170102c8371ccd933fa4df6252086d144de6",
+                "reference": "71cf170102c8371ccd933fa4df6252086d144de6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "ext-sodium": "*",
+                "lcobucci/clock": "^2.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.21",
+                "lcobucci/coding-standard": "^6.0",
+                "mikey179/vfsstream": "^1.6.7",
+                "phpbench/phpbench": "^1.0@alpha",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
+                "phpunit/php-invoker": "^3.1",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Cobucci",
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+            "keywords": [
+                "JWS",
+                "jwt"
+            ],
+            "support": {
+                "issues": "https://github.com/lcobucci/jwt/issues",
+                "source": "https://github.com/lcobucci/jwt/tree/4.1.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/lcobucci",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lcobucci",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-03-23T23:53:08+00:00"
+        },
+        {
+            "name": "lexik/jwt-authentication-bundle",
+            "version": "v2.12.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lexik/LexikJWTAuthenticationBundle.git",
+                "reference": "f2df9f7a371a99a05e5bfe65c634a7e0cdf1c539"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lexik/LexikJWTAuthenticationBundle/zipball/f2df9f7a371a99a05e5bfe65c634a7e0cdf1c539",
+                "reference": "f2df9f7a371a99a05e5bfe65c634a7e0cdf1c539",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "lcobucci/jwt": "^3.4|^4.0",
+                "namshi/jose": "^7.2",
+                "php": ">=7.1",
+                "symfony/deprecation-contracts": "^2.4",
+                "symfony/framework-bundle": "^4.4|^5.1",
+                "symfony/security-bundle": "^4.4|^5.1"
+            },
+            "require-dev": {
+                "symfony/browser-kit": "^4.4|^5.1",
+                "symfony/console": "^4.4|^5.1",
+                "symfony/dom-crawler": "^4.4|^5.1",
+                "symfony/phpunit-bridge": "^4.4|^5.1",
+                "symfony/var-dumper": "^4.4|^5.1",
+                "symfony/yaml": "^4.4|^5.1"
+            },
+            "suggest": {
+                "gesdinet/jwt-refresh-token-bundle": "Implements a refresh token system over Json Web Tokens in Symfony",
+                "spomky-labs/lexik-jose-bridge": "Provides a JWT Token encoder with encryption support"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lexik\\Bundle\\JWTAuthenticationBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Barthe",
+                    "email": "j.barthe@lexik.fr",
+                    "homepage": "https://github.com/jeremyb"
+                },
+                {
+                    "name": "Nicolas Cabot",
+                    "email": "n.cabot@lexik.fr",
+                    "homepage": "https://github.com/slashfan"
+                },
+                {
+                    "name": "Cedric Girard",
+                    "email": "c.girard@lexik.fr",
+                    "homepage": "https://github.com/cedric-g"
+                },
+                {
+                    "name": "Dev Lexik",
+                    "email": "dev@lexik.fr",
+                    "homepage": "https://github.com/lexik"
+                },
+                {
+                    "name": "Robin Chalas",
+                    "email": "robin.chalas@gmail.com",
+                    "homepage": "https://github.com/chalasr"
+                },
+                {
+                    "name": "Lexik Community",
+                    "homepage": "https://github.com/lexik/LexikJWTAuthenticationBundle/graphs/contributors"
+                }
+            ],
+            "description": "This bundle provides JWT authentication for your Symfony REST API",
+            "homepage": "https://github.com/lexik/LexikJWTAuthenticationBundle",
+            "keywords": [
+                "Authentication",
+                "JWS",
+                "api",
+                "bundle",
+                "jwt",
+                "rest",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/lexik/LexikJWTAuthenticationBundle/issues",
+                "source": "https://github.com/lexik/LexikJWTAuthenticationBundle/tree/v2.12.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/chalasr",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/lexik/jwt-authentication-bundle",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-29T11:25:22+00:00"
+        },
+        {
+            "name": "mongodb/mongodb",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mongodb/mongo-php-library.git",
+                "reference": "4afe9254e87252879bfbb625858e78fbe072daa0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/4afe9254e87252879bfbb625858e78fbe072daa0",
+                "reference": "4afe9254e87252879bfbb625858e78fbe072daa0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mongodb": "^1.10.0",
+                "jean85/pretty-package-versions": "^1.2 || ^2.0.1",
+                "php": "^7.1 || ^8.0",
+                "symfony/polyfill-php80": "^1.19"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^9.0",
+                "squizlabs/php_codesniffer": "^3.6",
+                "symfony/phpunit-bridge": "^5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MongoDB\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Braun",
+                    "email": "andreas.braun@mongodb.com"
+                },
+                {
+                    "name": "Jeremy Mikola",
+                    "email": "jmikola@gmail.com"
+                }
+            ],
+            "description": "MongoDB driver library",
+            "homepage": "https://jira.mongodb.org/browse/PHPLIB",
+            "keywords": [
+                "database",
+                "driver",
+                "mongodb",
+                "persistence"
+            ],
+            "support": {
+                "issues": "https://github.com/mongodb/mongo-php-library/issues",
+                "source": "https://github.com/mongodb/mongo-php-library/tree/1.9.0"
+            },
+            "time": "2021-07-13T20:03:24+00:00"
+        },
+        {
+            "name": "namshi/jose",
+            "version": "7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/namshi/jose.git",
+                "reference": "89a24d7eb3040e285dd5925fcad992378b82bcff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/namshi/jose/zipball/89a24d7eb3040e285dd5925fcad992378b82bcff",
+                "reference": "89a24d7eb3040e285dd5925fcad992378b82bcff",
+                "shasum": ""
+            },
+            "require": {
+                "ext-date": "*",
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-spl": "*",
+                "php": ">=5.5",
+                "symfony/polyfill-php56": "^1.0"
+            },
+            "require-dev": {
+                "phpseclib/phpseclib": "^2.0",
+                "phpunit/phpunit": "^4.5|^5.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "suggest": {
+                "ext-openssl": "Allows to use OpenSSL as crypto engine.",
+                "phpseclib/phpseclib": "Allows to use Phpseclib as crypto engine, use version ^2.0."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Namshi\\JOSE\\": "src/Namshi/JOSE/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alessandro Nadalin",
+                    "email": "alessandro.nadalin@gmail.com"
+                },
+                {
+                    "name": "Alessandro Cinelli (cirpo)",
+                    "email": "alessandro.cinelli@gmail.com"
+                }
+            ],
+            "description": "JSON Object Signing and Encryption library for PHP.",
+            "keywords": [
+                "JSON Web Signature",
+                "JSON Web Token",
+                "JWS",
+                "json",
+                "jwt",
+                "token"
+            ],
+            "support": {
+                "issues": "https://github.com/namshi/jose/issues",
+                "source": "https://github.com/namshi/jose/tree/master"
+            },
+            "time": "2016-12-05T07:27:31+00:00"
+        },
+        {
+            "name": "nelmio/cors-bundle",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nelmio/NelmioCorsBundle.git",
+                "reference": "0b964b665016dfb61dd0fd2bb8c24afb1ae45a93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nelmio/NelmioCorsBundle/zipball/0b964b665016dfb61dd0fd2bb8c24afb1ae45a93",
+                "reference": "0b964b665016dfb61dd0fd2bb8c24afb1ae45a93",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/framework-bundle": "^4.3 || ^5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "symfony/phpunit-bridge": "^4.3 || ^5.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nelmio\\CorsBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nelmio",
+                    "homepage": "http://nelm.io"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/nelmio/NelmioCorsBundle/contributors"
+                }
+            ],
+            "description": "Adds CORS (Cross-Origin Resource Sharing) headers support in your Symfony application",
+            "keywords": [
+                "api",
+                "cors",
+                "crossdomain"
+            ],
+            "support": {
+                "issues": "https://github.com/nelmio/NelmioCorsBundle/issues",
+                "source": "https://github.com/nelmio/NelmioCorsBundle/tree/2.1.1"
+            },
+            "time": "2021-04-20T08:27:05+00:00"
+        },
+        {
+            "name": "nesbot/carbon",
+            "version": "2.51.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/briannesbitt/Carbon.git",
+                "reference": "8619c299d1e0d4b344e1f98ca07a1ce2cfbf1922"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8619c299d1e0d4b344e1f98ca07a1ce2cfbf1922",
+                "reference": "8619c299d1e0d4b344e1f98ca07a1ce2cfbf1922",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.1.8 || ^8.0",
+                "symfony/polyfill-mbstring": "^1.0",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/translation": "^3.4 || ^4.0 || ^5.0"
+            },
+            "require-dev": {
+                "doctrine/orm": "^2.7",
+                "friendsofphp/php-cs-fixer": "^2.14 || ^3.0",
+                "kylekatarnls/multi-tester": "^2.0",
+                "phpmd/phpmd": "^2.9",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^0.12.54",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.14",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "bin": [
+                "bin/carbon"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev",
+                    "dev-master": "2.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Carbon\\Laravel\\ServiceProvider"
+                    ]
+                },
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Carbon\\": "src/Carbon/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Nesbitt",
+                    "email": "brian@nesbot.com",
+                    "homepage": "https://markido.com"
+                },
+                {
+                    "name": "kylekatarnls",
+                    "homepage": "https://github.com/kylekatarnls"
+                }
+            ],
+            "description": "An API extension for DateTime that supports 281 different languages.",
+            "homepage": "https://carbon.nesbot.com",
+            "keywords": [
+                "date",
+                "datetime",
+                "time"
+            ],
+            "support": {
+                "issues": "https://github.com/briannesbitt/Carbon/issues",
+                "source": "https://github.com/briannesbitt/Carbon"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/Carbon",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/nesbot/carbon",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-28T13:16:28+00:00"
+        },
+        {
+            "name": "opis/json-schema",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opis/json-schema.git",
+                "reference": "39d8072be8657a329a284339994401066406c43b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opis/json-schema/zipball/39d8072be8657a329a284339994401066406c43b",
+                "reference": "39d8072be8657a329a284339994401066406c43b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "ext-bcmath": "*",
+                "ext-intl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "opis/string": "^1.4",
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^9.4"
+            },
+            "suggest": {
+                "opis/string": "A standalone library for manipulating multibyte strings"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Opis\\JsonSchema\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sorin Sarca",
+                    "email": "sarca_sorin@hotmail.com"
+                },
+                {
+                    "name": "Marius Sarca",
+                    "email": "marius.sarca@gmail.com"
+                }
+            ],
+            "description": "Json Schema Validator",
+            "homepage": "http://www.opis.io/json-schema",
+            "keywords": [
+                "json",
+                "schema",
+                "validation",
+                "validator"
+            ],
+            "support": {
+                "issues": "https://github.com/opis/json-schema/issues",
+                "source": "https://github.com/opis/json-schema/tree/1.1.0"
+            },
+            "time": "2021-04-14T20:02:50+00:00"
+        },
         {
             "name": "psr/cache",
             "version": "2.0.0",
@@ -202,6 +2151,80 @@
                 "source": "https://github.com/php-fig/log/tree/2.0.0"
             },
             "time": "2021-07-14T16:41:46+00:00"
+        },
+        {
+            "name": "symfony/asset",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/asset.git",
+                "reference": "c585cf688470abafa6649d70f78cc1860728121b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/asset/zipball/c585cf688470abafa6649d70f78cc1860728121b",
+                "reference": "c585cf688470abafa6649d70f78cc1860728121b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "conflict": {
+                "symfony/http-foundation": "<5.3"
+            },
+            "require-dev": {
+                "symfony/http-client": "^4.4|^5.0|^6.0",
+                "symfony/http-foundation": "^5.3|^6.0",
+                "symfony/http-kernel": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "symfony/http-foundation": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Asset\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Manages URL generation and versioning of web assets such as CSS stylesheets, JavaScript files and image files",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/asset/tree/5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-25T15:25:29+00:00"
         },
         {
             "name": "symfony/cache",
@@ -1622,6 +3645,79 @@
             "time": "2021-08-12T13:55:08+00:00"
         },
         {
+            "name": "symfony/password-hasher",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/password-hasher.git",
+                "reference": "53a861cd86a6e183e0c2a300315bb28a9c9aa525"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/password-hasher/zipball/53a861cd86a6e183e0c2a300315bb28a9c9aa525",
+                "reference": "53a861cd86a6e183e0c2a300315bb28a9c9aa525",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "conflict": {
+                "symfony/security-core": "<5.3"
+            },
+            "require-dev": {
+                "symfony/console": "^5",
+                "symfony/security-core": "^5.3|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\PasswordHasher\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robin Chalas",
+                    "email": "robin.chalas@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides password hashing utilities",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "hashing",
+                "password"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/password-hasher/tree/5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-30T15:53:02+00:00"
+        },
+        {
             "name": "symfony/polyfill-intl-grapheme",
             "version": "v1.23.1",
             "source": {
@@ -1867,6 +3963,74 @@
             "time": "2021-05-27T12:26:48+00:00"
         },
         {
+            "name": "symfony/polyfill-php56",
+            "version": "v1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php56.git",
+                "reference": "54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675",
+                "reference": "54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.20-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 5.6+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php56/tree/v1.20.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-23T14:02:19+00:00"
+        },
+        {
             "name": "symfony/polyfill-php73",
             "version": "v1.23.0",
             "source": {
@@ -2108,6 +4272,256 @@
             "time": "2021-05-21T13:25:03+00:00"
         },
         {
+            "name": "symfony/polyfill-uuid",
+            "version": "v1.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-uuid.git",
+                "reference": "9165effa2eb8a31bb3fa608df9d529920d21ddd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-uuid/zipball/9165effa2eb8a31bb3fa608df9d529920d21ddd9",
+                "reference": "9165effa2eb8a31bb3fa608df9d529920d21ddd9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-uuid": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Uuid\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Grégoire Pineau",
+                    "email": "lyrixx@lyrixx.info"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for uuid functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "uuid"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.23.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-02-19T12:13:01+00:00"
+        },
+        {
+            "name": "symfony/property-access",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/property-access.git",
+                "reference": "aaa09eb714623e935494b5852c1eff260b704ae1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/aaa09eb714623e935494b5852c1eff260b704ae1",
+                "reference": "aaa09eb714623e935494b5852c1eff260b704ae1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/property-info": "^5.2|^6.0"
+            },
+            "require-dev": {
+                "symfony/cache": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "psr/cache-implementation": "To cache access methods."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\PropertyAccess\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides functions to read and write from/to an object or array using a simple string notation",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "access",
+                "array",
+                "extraction",
+                "index",
+                "injection",
+                "object",
+                "property",
+                "property path",
+                "reflection"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/property-access/tree/5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-09T12:23:16+00:00"
+        },
+        {
+            "name": "symfony/property-info",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/property-info.git",
+                "reference": "63eddb6d10fffe3f25d901d78fef37ca88838b22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/63eddb6d10fffe3f25d901d78fef37ca88838b22",
+                "reference": "63eddb6d10fffe3f25d901d78fef37ca88838b22",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/string": "^5.1|^6.0"
+            },
+            "conflict": {
+                "phpdocumentor/reflection-docblock": "<3.2.2",
+                "phpdocumentor/type-resolver": "<1.4.0",
+                "symfony/dependency-injection": "<4.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.10.4",
+                "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
+                "symfony/cache": "^4.4|^5.0|^6.0",
+                "symfony/dependency-injection": "^4.4|^5.0|^6.0",
+                "symfony/serializer": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "phpdocumentor/reflection-docblock": "To use the PHPDoc",
+                "psr/cache-implementation": "To cache results",
+                "symfony/doctrine-bridge": "To use Doctrine metadata",
+                "symfony/serializer": "To use Serializer metadata"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\PropertyInfo\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kévin Dunglas",
+                    "email": "dunglas@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Extracts information about PHP class' properties using metadata of popular sources",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "doctrine",
+                "phpdoc",
+                "property",
+                "symfony",
+                "type",
+                "validator"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/property-info/tree/5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-21T12:43:48+00:00"
+        },
+        {
             "name": "symfony/routing",
             "version": "5.4.x-dev",
             "source": {
@@ -2275,6 +4689,425 @@
             "time": "2021-08-12T09:57:42+00:00"
         },
         {
+            "name": "symfony/security-bundle",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/security-bundle.git",
+                "reference": "6fb3c5118573486fafbbbded865e890417d85b35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/6fb3c5118573486fafbbbded865e890417d85b35",
+                "reference": "6fb3c5118573486fafbbbded865e890417d85b35",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "php": ">=7.2.5",
+                "symfony/config": "^4.4|^5.0|^6.0",
+                "symfony/dependency-injection": "^5.3|^6.0",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/event-dispatcher": "^5.1|^6.0",
+                "symfony/http-foundation": "^5.3|^6.0",
+                "symfony/http-kernel": "^5.3|^6.0",
+                "symfony/password-hasher": "^5.3|^6.0",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/security-core": "^5.4|^6.0",
+                "symfony/security-csrf": "^4.4|^5.0|^6.0",
+                "symfony/security-guard": "^5.3|^6.0",
+                "symfony/security-http": "^5.4|^6.0"
+            },
+            "conflict": {
+                "symfony/browser-kit": "<4.4",
+                "symfony/console": "<4.4",
+                "symfony/framework-bundle": "<4.4",
+                "symfony/ldap": "<5.1",
+                "symfony/twig-bundle": "<4.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.10.4",
+                "symfony/asset": "^4.4|^5.0|^6.0",
+                "symfony/browser-kit": "^4.4|^5.0|^6.0",
+                "symfony/console": "^4.4|^5.0|^6.0",
+                "symfony/css-selector": "^4.4|^5.0|^6.0",
+                "symfony/dom-crawler": "^4.4|^5.0|^6.0",
+                "symfony/expression-language": "^4.4|^5.0|^6.0",
+                "symfony/form": "^4.4|^5.0|^6.0",
+                "symfony/framework-bundle": "^5.3|^6.0",
+                "symfony/ldap": "^5.3|^6.0",
+                "symfony/process": "^4.4|^5.0|^6.0",
+                "symfony/rate-limiter": "^5.2|^6.0",
+                "symfony/serializer": "^4.4|^5.0|^6.0",
+                "symfony/translation": "^4.4|^5.0|^6.0",
+                "symfony/twig-bridge": "^4.4|^5.0|^6.0",
+                "symfony/twig-bundle": "^4.4|^5.0|^6.0",
+                "symfony/validator": "^4.4|^5.0|^6.0",
+                "symfony/yaml": "^4.4|^5.0|^6.0",
+                "twig/twig": "^2.13|^3.0.4"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\SecurityBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a tight integration of the Security component into the Symfony full-stack framework",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/security-bundle/tree/5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-14T09:34:05+00:00"
+        },
+        {
+            "name": "symfony/security-core",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/security-core.git",
+                "reference": "760993a4afb4e2b5bb0e644077a4c990a92e2dc0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/760993a4afb4e2b5bb0e644077a4c990a92e2dc0",
+                "reference": "760993a4afb4e2b5bb0e644077a4c990a92e2dc0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/event-dispatcher-contracts": "^1.1|^2",
+                "symfony/password-hasher": "^5.3|^6.0",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/service-contracts": "^1.1.6|^2"
+            },
+            "conflict": {
+                "symfony/event-dispatcher": "<4.4",
+                "symfony/http-foundation": "<5.3",
+                "symfony/ldap": "<4.4",
+                "symfony/security-guard": "<4.4",
+                "symfony/validator": "<5.2"
+            },
+            "require-dev": {
+                "psr/cache": "^1.0|^2.0|^3.0",
+                "psr/container": "^1.0|^2.0",
+                "psr/log": "^1|^2|^3",
+                "symfony/cache": "^4.4|^5.0|^6.0",
+                "symfony/event-dispatcher": "^4.4|^5.0|^6.0",
+                "symfony/expression-language": "^4.4|^5.0|^6.0",
+                "symfony/http-foundation": "^5.3|^6.0",
+                "symfony/ldap": "^4.4|^5.0|^6.0",
+                "symfony/translation": "^4.4|^5.0|^6.0",
+                "symfony/validator": "^5.2|^6.0"
+            },
+            "suggest": {
+                "psr/container-implementation": "To instantiate the Security class",
+                "symfony/event-dispatcher": "",
+                "symfony/expression-language": "For using the expression voter",
+                "symfony/http-foundation": "",
+                "symfony/ldap": "For using LDAP integration",
+                "symfony/validator": "For using the user password constraint"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Security\\Core\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Security Component - Core Library",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/security-core/tree/5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-14T21:25:11+00:00"
+        },
+        {
+            "name": "symfony/security-csrf",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/security-csrf.git",
+                "reference": "c46558a748a948f93c8968ee0ea02597fb6ae40b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/security-csrf/zipball/c46558a748a948f93c8968ee0ea02597fb6ae40b",
+                "reference": "c46558a748a948f93c8968ee0ea02597fb6ae40b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/security-core": "^4.4|^5.0|^6.0"
+            },
+            "conflict": {
+                "symfony/http-foundation": "<5.3"
+            },
+            "require-dev": {
+                "symfony/http-foundation": "^5.3|^6.0"
+            },
+            "suggest": {
+                "symfony/http-foundation": "For using the class SessionTokenStorage."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Security\\Csrf\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Security Component - CSRF Library",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/security-csrf/tree/5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-21T12:43:48+00:00"
+        },
+        {
+            "name": "symfony/security-guard",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/security-guard.git",
+                "reference": "1ead91c271e9be88b02c412d6422341bf961836b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/security-guard/zipball/1ead91c271e9be88b02c412d6422341bf961836b",
+                "reference": "1ead91c271e9be88b02c412d6422341bf961836b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.15",
+                "symfony/security-core": "^5.0|^6.0",
+                "symfony/security-http": "^5.3|^6.0"
+            },
+            "require-dev": {
+                "psr/log": "^1|^2|^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Security\\Guard\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Security Component - Guard",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/security-guard/tree/5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-13T15:59:15+00:00"
+        },
+        {
+            "name": "symfony/security-http",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/security-http.git",
+                "reference": "1c153118839866ccbf7cc6abdfbee09292b82c77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/security-http/zipball/1c153118839866ccbf7cc6abdfbee09292b82c77",
+                "reference": "1c153118839866ccbf7cc6abdfbee09292b82c77",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/http-foundation": "^5.3|^6.0",
+                "symfony/http-kernel": "^5.3|^6.0",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/property-access": "^4.4|^5.0|^6.0",
+                "symfony/security-core": "^5.4|^6.0"
+            },
+            "conflict": {
+                "symfony/event-dispatcher": "<4.3",
+                "symfony/security-bundle": "<5.3",
+                "symfony/security-csrf": "<4.4"
+            },
+            "require-dev": {
+                "psr/log": "^1|^2|^3",
+                "symfony/cache": "^4.4|^5.0|^6.0",
+                "symfony/rate-limiter": "^5.2|^6.0",
+                "symfony/routing": "^4.4|^5.0|^6.0",
+                "symfony/security-csrf": "^4.4|^5.0|^6.0",
+                "symfony/translation": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "symfony/routing": "For using the HttpUtils class to create sub-requests, redirect the user, and match URLs",
+                "symfony/security-csrf": "For using tokens to protect authentication/logout attempts"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Security\\Http\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Security Component - HTTP Integration",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/security-http/tree/5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-15T11:33:24+00:00"
+        },
+        {
             "name": "symfony/service-contracts",
             "version": "v2.4.0",
             "source": {
@@ -2435,6 +5268,253 @@
                 }
             ],
             "time": "2021-06-27T12:34:25+00:00"
+        },
+        {
+            "name": "symfony/translation",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation.git",
+                "reference": "63b41a8443d0127f33881392ba0585d0083cbb39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/63b41a8443d0127f33881392ba0585d0083cbb39",
+                "reference": "63b41a8443d0127f33881392ba0585d0083cbb39",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/translation-contracts": "^2.3"
+            },
+            "conflict": {
+                "symfony/config": "<4.4",
+                "symfony/console": "<5.3",
+                "symfony/dependency-injection": "<5.0",
+                "symfony/http-kernel": "<5.0",
+                "symfony/twig-bundle": "<5.0",
+                "symfony/yaml": "<4.4"
+            },
+            "provide": {
+                "symfony/translation-implementation": "2.3"
+            },
+            "require-dev": {
+                "psr/log": "^1|^2|^3",
+                "symfony/config": "^4.4|^5.0|^6.0",
+                "symfony/console": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.0|^6.0",
+                "symfony/finder": "^4.4|^5.0|^6.0",
+                "symfony/http-kernel": "^5.0|^6.0",
+                "symfony/intl": "^4.4|^5.0|^6.0",
+                "symfony/polyfill-intl-icu": "^1.21",
+                "symfony/service-contracts": "^1.1.2|^2",
+                "symfony/yaml": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "psr/log-implementation": "To use logging capability in translator",
+                "symfony/config": "",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Resources/functions.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\Translation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides tools to internationalize your application",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/translation/tree/5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-14T21:25:11+00:00"
+        },
+        {
+            "name": "symfony/translation-contracts",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation-contracts.git",
+                "reference": "95c812666f3e91db75385749fe219c5e494c7f95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/95c812666f3e91db75385749fe219c5e494c7f95",
+                "reference": "95c812666f3e91db75385749fe219c5e494c7f95",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5"
+            },
+            "suggest": {
+                "symfony/translation-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.4-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\Translation\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to translation",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/translation-contracts/tree/v2.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-03-23T23:28:01+00:00"
+        },
+        {
+            "name": "symfony/uid",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/uid.git",
+                "reference": "d1de9aa8697e3f89c25b5d78c13a1a50e66e6126"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/uid/zipball/d1de9aa8697e3f89c25b5d78c13a1a50e66e6126",
+                "reference": "d1de9aa8697e3f89c25b5d78c13a1a50e66e6126",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-uuid": "^1.15"
+            },
+            "require-dev": {
+                "symfony/console": "^4.4|^5.0|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Uid\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Grégoire Pineau",
+                    "email": "lyrixx@lyrixx.info"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides an object-oriented API to generate and represent UIDs",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "UID",
+                "uuid"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/uid/tree/5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-06-24T08:56:45+00:00"
         },
         {
             "name": "symfony/var-dumper",
@@ -2599,6 +5679,77 @@
             "time": "2021-08-12T09:55:17+00:00"
         },
         {
+            "name": "symfony/webpack-encore-bundle",
+            "version": "v1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/webpack-encore-bundle.git",
+                "reference": "9943a59f8551b7a8181e19a2b4efa60e5907c667"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/9943a59f8551b7a8181e19a2b4efa60e5907c667",
+                "reference": "9943a59f8551b7a8181e19a2b4efa60e5907c667",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "symfony/asset": "^4.4 || ^5.0",
+                "symfony/config": "^4.4 || ^5.0",
+                "symfony/dependency-injection": "^4.4 || ^5.0",
+                "symfony/http-kernel": "^4.4 || ^5.0",
+                "symfony/service-contracts": "^1.0 || ^2.0"
+            },
+            "require-dev": {
+                "symfony/framework-bundle": "^4.4 || ^5.0",
+                "symfony/phpunit-bridge": "^4.4 || ^5.0",
+                "symfony/twig-bundle": "^4.4 || ^5.0",
+                "symfony/web-link": "^4.4 || ^5.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "thanks": {
+                    "name": "symfony/webpack-encore",
+                    "url": "https://github.com/symfony/webpack-encore"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\WebpackEncoreBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Integration with your Symfony app & Webpack Encore!",
+            "support": {
+                "issues": "https://github.com/symfony/webpack-encore-bundle/issues",
+                "source": "https://github.com/symfony/webpack-encore-bundle/tree/v1.12.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-06-18T19:13:11+00:00"
+        },
+        {
             "name": "symfony/yaml",
             "version": "5.4.x-dev",
             "source": {
@@ -2674,16 +5825,99 @@
                 }
             ],
             "time": "2021-08-14T21:43:09+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v3.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "21578f00e83d4a82ecfa3d50752b609f13de6790"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/21578f00e83d4a82ecfa3d50752b609f13de6790",
+                "reference": "21578f00e83d4a82ecfa3d50752b609f13de6790",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "^1.8",
+                "symfony/polyfill-mbstring": "^1.3"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "symfony/phpunit-bridge": "^4.4.9|^5.0.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Twig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Twig Team",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "https://twig.symfony.com",
+            "keywords": [
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/twigphp/Twig/issues",
+                "source": "https://github.com/twigphp/Twig/tree/v3.3.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/twig/twig",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-05-16T12:14:13+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "everyworkflow/base-bundle": 20,
+        "everyworkflow/cms-bundle": 20,
+        "everyworkflow/crm-bundle": 20,
+        "everyworkflow/dam-bundle": 20,
+        "everyworkflow/ecommerce-bundle": 20,
+        "everyworkflow/pim-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.2.5",
+        "php": "^8.0",
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
