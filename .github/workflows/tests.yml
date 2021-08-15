@@ -1,0 +1,65 @@
+name: tests
+
+on:
+  # Run on every push event to master
+  push:
+    branches:
+      - main
+      - '*-dev'
+      # branches-ignore:
+      # Skip bot branches
+      # - 'dependabot*'
+      # Skip development branch
+    paths-ignore:
+      - '**.md'
+  # Run on every pull request
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Docker version
+        run: docker -v && docker-compose -v
+      - name: Clone symfony dev docker
+        uses: actions/checkout@v2
+        with:
+          repository: 'readymadehost/symfony-dev-docker'
+      - name: Checkout project code
+        uses: actions/checkout@v2
+        with:
+          path: 'project'
+          ref: ${{github.event.pull_request.head.ref}}
+          repository: ${{github.event.pull_request.head.repo.full_name}}
+      # For docker build cache
+      - name: Symfony dev docker build cache
+        uses: satackey/action-docker-layer-caching@v0.0.8
+        continue-on-error: true
+      - name: Setting up docker environment
+        run: cp project/symfony-dev-docker/.env .env && cp project/symfony-dev-docker/docker-compose.yml docker-compose.yml
+      - name: Copy php-cli Dockerfile file
+        run: cp project/symfony-dev-docker/github-action/php8.0/cli/Dockerfile php8.0/cli/Dockerfile
+      - name: Copy php-fpm Dockerfile file
+        run: cp project/symfony-dev-docker/github-action/php8.0/fpm/Dockerfile php8.0/fpm/Dockerfile
+      # Deploying latest build to local dev server
+      - name: Build dev docker
+        run: docker-compose build && docker-compose up -d
+      # For symfony
+      - name: Installing project dependencies
+        run: docker-compose exec -T cli composer install --prefer-dist --no-progress --no-suggest
+      - name: Preparing test database
+        run: docker-compose exec -T cli bin/console --env=test mongo:database:drop && docker-compose exec -T cli bin/console --env=test mongo:migrate
+      - name: Check version and run tests
+        run: docker-compose exec -T cli vendor/bin/phpunit --version && docker-compose exec -T cli vendor/bin/phpunit
+      - name: Generating code coverage to test-html dir
+        run: docker-compose exec -T -e XDEBUG_MODE=coverage cli vendor/bin/phpunit --coverage-text | head -n 18
+      # For frontend
+      - name: Installing frontend dependencies
+        run: docker-compose exec -T cli yarn install
+      - name: Running jest tests
+        run: docker-compose exec -T cli yarn test
+      - name: Building frontend dependencies
+        run: docker-compose exec -T cli yarn build
+      # Cleaning docker
+      - name: Cleaning docker
+        run: docker-compose down
