@@ -1,8 +1,8 @@
 webpack_encore:
     # The path where Encore is building the assets - i.e. Encore.setOutputPath()
-    output_path: '%kernel.project_dir%/public/build'
+    # output_path: '%kernel.project_dir%/public/build'
     # If multiple builds are defined (as shown below), you can disable the default build:
-    # output_path: false
+    output_path: false
 
     # Set attributes that will be rendered on all script and link tags
     script_attributes:
@@ -21,10 +21,12 @@ webpack_encore:
     # preload: true
 
     # Throw an exception if the entrypoints.json file is missing or an entry is missing from the data
-    # strict_mode: false
+    strict_mode: false
 
     # If you have multiple builds:
-    # builds:
+    builds:
+        frontend: '%kernel.project_dir%/public/frontend-build'
+        admin_panel: '%kernel.project_dir%/public/panel-build'
         # pass "frontend" as the 3rg arg to the Twig functions
         # {{ encore_entry_script_tags('entry1', null, 'frontend') }}
 

@@ -5,6 +5,8 @@
         "dev-server": "encore dev-server",
         "dev": "encore dev",
         "watch": "encore dev --watch",
+        "watch:admin_panel": "encore dev --config-name admin_panel --watch",
+        "watch:frontend": "encore dev --config-name frontend --watch",
         "build": "encore production --progress",
         "test": "jest"
       },

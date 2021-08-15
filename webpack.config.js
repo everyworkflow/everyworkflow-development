@@ -1,75 +1,161 @@
+/*
+ * @copyright EveryWorkflow. All rights reserved.
+ */
+
 const Encore = require('@symfony/webpack-encore');
+const path = require('path');
+const dotenv = require('dotenv');
+const WorkboxPlugin = require('workbox-webpack-plugin');
+const { resolveTsAliases } = require('resolve-ts-aliases');
 
-// Manually configure the runtime environment if not already configured yet by the "encore" command.
-// It's useful when you use tools that rely on webpack.config.js file.
-if (!Encore.isRuntimeEnvironmentConfigured()) {
-    Encore.configureRuntimeEnvironment(process.env.NODE_ENV || 'dev');
-}
+const compileEncoreList = [
+    {
+        public_path: 'http://localhost:8080/frontend-build',
+        manifest_path: 'frontend-build',
+        output_path: 'public/frontend-build/',
+        entry: {
+            name: 'frontend',
+            src: './assets/Frontend.tsx'
+        }
+    },
+    {
+        public_path: 'http://localhost:8080/panel-build',
+        manifest_path: 'panel-build',
+        output_path: 'public/panel-build/',
+        entry: {
+            name: 'admin_panel',
+            src: './assets/AdminPanel.tsx'
+        }
+    }
+];
 
-Encore
-    // directory where compiled assets will be stored
-    .setOutputPath('public/build/')
-    // public path used by the web server to access the output path
-    .setPublicPath('/build')
-    // only needed for CDN's or sub-directory deploy
-    //.setManifestKeyPrefix('build/')
+const exportConfigList = [];
 
-    /*
-     * ENTRY CONFIG
-     *
-     * Each entry will result in one JavaScript file (e.g. app.js)
-     * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
-     */
-    .addEntry('app', './assets/app.js')
+compileEncoreList.forEach(encoreItem => {
+    // Manually configure the runtime environment if not already configured yet by the "encore" command.
+    // It's useful when you use tools that rely on webpack.config.js file.
+    if (!Encore.isRuntimeEnvironmentConfigured()) {
+        Encore.configureRuntimeEnvironment(process.env.NODE_ENV || 'dev');
+    }
+
+    Encore
+        .setOutputPath(encoreItem.output_path)
+        .setPublicPath(encoreItem.public_path)
+        // only needed for CDN's or sub-directory deploy
+        // .setManifestKeyPrefix('build/')
+
+        .addEntry(encoreItem.entry.name, encoreItem.entry.src)
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
-    .enableStimulusBridge('./assets/controllers.json')
+    // .enableStimulusBridge('./assets/controllers.json')
 
-    // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
-    .splitEntryChunks()
+        // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
+        // .splitEntryChunks()
 
-    // will require an extra script tag for runtime.js
-    // but, you probably want this, unless you're building a single-page app
-    .enableSingleRuntimeChunk()
+        // will require an extra script tag for runtime.js
+        // but, you probably want this, unless you're building a single-page app
+        // .enableSingleRuntimeChunk()
+        // .disableSingleRuntimeChunk()
 
-    /*
-     * FEATURE CONFIG
-     *
-     * Enable & configure other features below. For a full
-     * list of features, see:
-     * https://symfony.com/doc/current/frontend.html#adding-more-features
-     */
-    .cleanupOutputBeforeBuild()
-    .enableBuildNotifications()
-    .enableSourceMaps(!Encore.isProduction())
-    // enables hashed filenames (e.g. app.abc123.css)
-    .enableVersioning(Encore.isProduction())
+        /*
+         * FEATURE CONFIG
+         *
+         * Enable & configure other features below. For a full
+         * list of features, see:
+         * https://symfony.com/doc/current/frontend.html#adding-more-features
+         */
+        .cleanupOutputBeforeBuild()
+        .enableBuildNotifications()
+        .enableSourceMaps(!Encore.isProduction())
+        // enables hashed filenames (e.g. app.abc123.css)
+        .enableVersioning(Encore.isProduction())
 
-    .configureBabel((config) => {
-        config.plugins.push('@babel/plugin-proposal-class-properties');
-    })
+        .configureBabel((config) => {
+            config.plugins.push('@babel/plugin-proposal-class-properties');
+        })
 
-    // enables @babel/preset-env polyfills
-    .configureBabelPresetEnv((config) => {
-        config.useBuiltIns = 'usage';
-        config.corejs = 3;
-    })
+        // enables @babel/preset-env polyfills
+        .configureBabelPresetEnv((config) => {
+            config.useBuiltIns = 'usage';
+            config.corejs = 3;
+        })
 
-    // enables Sass/SCSS support
-    //.enableSassLoader()
+        // enables Sass/SCSS support
+        .enableSassLoader()
 
-    // uncomment if you use TypeScript
-    //.enableTypeScriptLoader()
+        // processes files ending in .less
+        .enableLessLoader((options) => {
+            options.lessOptions = {
+                javascriptEnabled: true,
+            };
+        })
 
-    // uncomment if you use React
-    //.enableReactPreset()
+        // uncomment if you use TypeScript
+        .enableTypeScriptLoader()
 
-    // uncomment to get integrity="..." attributes on your script & link tags
-    // requires WebpackEncoreBundle 1.4 or higher
-    //.enableIntegrityHashes(Encore.isProduction())
+        // uncomment if you use React
+        .enableReactPreset()
 
-    // uncomment if you're having problems with a jQuery plugin
-    //.autoProvidejQuery()
-;
+        .addPlugin(new WorkboxPlugin.GenerateSW({
+            clientsClaim: true,
+            skipWaiting: true,
+        }))
 
-module.exports = Encore.getWebpackConfig();
+        // uncomment to get integrity="..." attributes on your script & link tags
+        // requires WebpackEncoreBundle 1.4 or higher
+        .enableIntegrityHashes(Encore.isProduction())
+
+        // uncomment if you're having problems with a jQuery plugin
+        //.autoProvidejQuery()
+        .configureDefinePlugin(options => {
+            const env = dotenv.config();
+            
+            if (env.error) {
+                throw env.error;
+            }
+
+            /* .env variables that are passed to react apps */
+            const envVariables = [
+                'API_BASE_URL',
+                'API_END_POINT',
+                'PANEL_BASE_URL',
+                'PANEL_END_POINT',
+                'MEDIA_BASE_URL',
+                'REACT_DEBUG',
+                'REACT_REMOTE_DEBUG',
+                'REACT_REDUCER_DEBUG',
+            ];
+            envVariables.forEach(envVariable => {
+                options['process.env.' + envVariable] = JSON.stringify(env.parsed[envVariable]);
+            });
+            if (Encore.isProduction()) {
+                options['process.env.REACT_DEBUG'] = 0;
+                options['process.env.REACT_REMOTE_DEBUG'] = 0;
+                options['process.env.REACT_REDUCER_DEBUG'] = 0;
+            }
+        })
+    ;
+
+    if (encoreItem.hasOwnProperty('manifest_path') && typeof encoreItem.manifest_path === 'string') {
+        Encore.setManifestKeyPrefix(encoreItem.manifest_path);
+    }
+    if (encoreItem.hasOwnProperty('single_runtime_chunk') && encoreItem.single_runtime_chunk === true) {
+        Encore.enableSingleRuntimeChunk();
+    } else {
+        Encore.splitEntryChunks()
+            .disableSingleRuntimeChunk();
+    }
+
+    const config = Encore.getWebpackConfig();
+
+    /* Setting unique entry name */
+    config.name = encoreItem.entry.name;
+
+    /* Adding tsconfig path mapping to webpack resolve alias */
+    config.resolve.alias = resolveTsAliases(path.resolve("tsconfig"));
+
+    exportConfigList.push({...config});
+    Encore.reset();
+});
+
+module.exports = exportConfigList;

@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "react",
+        "sourceMap": true,
+        "baseUrl": "./",
+        "paths": {
+            "@EveryWorkflow/CoreBundle/*": ["everyworkflow/CoreBundle/Resources/assets/*"],
+            "@EveryWorkflow/DataFormBundle/*": ["everyworkflow/DataFormBundle/Resources/assets/*"],
+            "@EveryWorkflow/DataGridBundle/*": ["everyworkflow/DataGridBundle/Resources/assets/*"],
+            "@EveryWorkflow/EavBundle/*": ["everyworkflow/EavBundle/Resources/assets/*"],
+            "@EveryWorkflow/MediaManagerBundle/*": ["everyworkflow/MediaManagerBundle/Resources/assets/*"],
+            "@EveryWorkflow/PageBuilderBundle/*": ["everyworkflow/PageBuilderBundle/Resources/assets/*"],
+            "@EveryWorkflow/StaticBlockBundle/*": ["everyworkflow/StaticBlockBundle/Resources/assets/*"],
+            "@EveryWorkflow/PageBundle/*": ["everyworkflow/PageBundle/Resources/assets/*"],
+            "@EveryWorkflow/UrlRewriteBundle/*": ["everyworkflow/UrlRewriteBundle/Resources/assets/*"],
+            "@EveryWorkflow/UserBundle/*": ["everyworkflow/UserBundle/Resources/assets/*"],
+            "@EveryWorkflow/AdminPanelBundle/*": ["everyworkflow/AdminPanelBundle/Resources/assets/*"],
+            "@EveryWorkflow/FrontendBundle/*": ["everyworkflow/FrontendBundle/Resources/assets/*"],
+            "@EveryWorkflow/CustomerBundle/*": ["everyworkflow/CustomerBundle/Resources/assets/*"],
+            "@EveryWorkflow/CatalogCategoryBundle/*": ["everyworkflow/CatalogCategoryBundle/Resources/assets/*"],
+            "@EveryWorkflow/CatalogProductBundle/*": ["everyworkflow/CatalogProductBundle/Resources/assets/*"]
+        }
+    },
+    "include": [
+        "assets",
+        "everyworkflow/**/*.tsx"
+    ]
+}

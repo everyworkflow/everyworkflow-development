@@ -1,3 +1,28 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+api_login_check:
+  path: /api/login_check
+
+gesdinet_jwt_refresh_token:
+  path: /api/token/refresh
+  controller: gesdinet.jwtrefreshtoken::r
+
+EveryWorkflowBaseBundle:
+  resource: "@EveryWorkflowBaseBundle/Resources/config/routes.yaml"
+
+EveryWorkflowDamBundle:
+  resource: "@EveryWorkflowDamBundle/Resources/config/routes.yaml"
+
+EveryWorkflowCmsBundle:
+  resource: "@EveryWorkflowCmsBundle/Resources/config/routes.yaml"
+
+EveryWorkflowCrmBundle:
+  resource: "@EveryWorkflowCrmBundle/Resources/config/routes.yaml"
+
+EveryWorkflowPimBundle:
+  resource: "@EveryWorkflowPimBundle/Resources/config/routes.yaml"
+
+EveryWorkflowEcommerceBundle:
+  resource: "@EveryWorkflowEcommerceBundle/Resources/config/routes.yaml"
