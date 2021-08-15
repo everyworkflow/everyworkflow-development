@@ -6,6 +6,9 @@ return [
     Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle::class => ['all' => true],
     Symfony\WebpackEncoreBundle\WebpackEncoreBundle::class => ['all' => true],
     Nelmio\CorsBundle\NelmioCorsBundle::class => ['all' => true],
+    Symfony\Bundle\TwigBundle\TwigBundle::class => ['all' => true],
+    Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true],
+    Symfony\Bundle\WebProfilerBundle\WebProfilerBundle::class => ['dev' => true, 'test' => true],
     EveryWorkflow\CoreBundle\EveryWorkflowCoreBundle::class => ['all' => true],
     EveryWorkflow\MongoBundle\EveryWorkflowMongoBundle::class => ['all' => true],
     EveryWorkflow\DataFormBundle\EveryWorkflowDataFormBundle::class => ['all' => true],
@@ -33,5 +36,4 @@ return [
     EveryWorkflow\PimBundle\EveryWorkflowPimBundle::class => ['all' => true],
     EveryWorkflow\SalesOrderBundle\EveryWorkflowSalesOrderBundle::class => ['all' => true],
     EveryWorkflow\EcommerceBundle\EveryWorkflowEcommerceBundle::class => ['all' => true],
-    Symfony\Bundle\TwigBundle\TwigBundle::class => ['all' => true],
 ];
