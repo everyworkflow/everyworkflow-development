@@ -3,6 +3,9 @@
 A symfony based every workflow platform
 
 
+Version: Under Development `dev-main`
+
+
 ## Composer dependencies
 
 - `symfony` - Symfony 5 framework and components
