@@ -1,81 +1,84 @@
 [submodule "everyworkflow/CoreBundle"]
 	path = everyworkflow/CoreBundle
-	url = git@github.com:everyworkflow/core-bundle.git
+	url = https://github.com/everyworkflow/core-bundle.git
 [submodule "everyworkflow/DeveloperBundle"]
 	path = everyworkflow/DeveloperBundle
-	url = git@github.com:everyworkflow/developer-bundle.git
+	url = https://github.com/everyworkflow/developer-bundle.git
 [submodule "everyworkflow/MongoBundle"]
 	path = everyworkflow/MongoBundle
-	url = git@github.com:everyworkflow/mongo-bundle.git
+	url = https://github.com/everyworkflow/mongo-bundle.git
 [submodule "everyworkflow/DataFormBundle"]
 	path = everyworkflow/DataFormBundle
-	url = git@github.com:everyworkflow/data-form-bundle.git
+	url = https://github.com/everyworkflow/data-form-bundle.git
 [submodule "everyworkflow/DataGridBundle"]
 	path = everyworkflow/DataGridBundle
-	url = git@github.com:everyworkflow/data-grid-bundle.git
+	url = https://github.com/everyworkflow/data-grid-bundle.git
 [submodule "everyworkflow/EavBundle"]
 	path = everyworkflow/EavBundle
-	url = git@github.com:everyworkflow/eav-bundle.git
+	url = https://github.com/everyworkflow/eav-bundle.git
 [submodule "everyworkflow/SettingBundle"]
 	path = everyworkflow/SettingBundle
-	url = git@github.com:everyworkflow/setting-bundle.git
+	url = https://github.com/everyworkflow/setting-bundle.git
 [submodule "everyworkflow/UserBundle"]
 	path = everyworkflow/UserBundle
-	url = git@github.com:everyworkflow/user-bundle.git
+	url = https://github.com/everyworkflow/user-bundle.git
 [submodule "everyworkflow/ImportExportBundle"]
 	path = everyworkflow/ImportExportBundle
-	url = git@github.com:everyworkflow/import-export-bundle.git
+	url = https://github.com/everyworkflow/import-export-bundle.git
 [submodule "everyworkflow/ScopeBundle"]
 	path = everyworkflow/ScopeBundle
-	url = git@github.com:everyworkflow/scope-bundle.git
+	url = https://github.com/everyworkflow/scope-bundle.git
 [submodule "everyworkflow/AdminPanelBundle"]
 	path = everyworkflow/AdminPanelBundle
-	url = git@github.com:everyworkflow/admin-panel-bundle.git
+	url = https://github.com/everyworkflow/admin-panel-bundle.git
 [submodule "everyworkflow/BaseBundle"]
 	path = everyworkflow/BaseBundle
-	url = git@github.com:everyworkflow/base-bundle.git
+	url = https://github.com/everyworkflow/base-bundle.git
 [submodule "everyworkflow/MediaManagerBundle"]
 	path = everyworkflow/MediaManagerBundle
-	url = git@github.com:everyworkflow/media-manager-bundle.git
+	url = https://github.com/everyworkflow/media-manager-bundle.git
 [submodule "everyworkflow/DamBundle"]
 	path = everyworkflow/DamBundle
-	url = git@github.com:everyworkflow/dam-bundle.git
+	url = https://github.com/everyworkflow/dam-bundle.git
 [submodule "everyworkflow/PageBuilderBundle"]
 	path = everyworkflow/PageBuilderBundle
-	url = git@github.com:everyworkflow/page-builder-bundle.git
+	url = https://github.com/everyworkflow/page-builder-bundle.git
 [submodule "everyworkflow/PageBundle"]
 	path = everyworkflow/PageBundle
-	url = git@github.com:everyworkflow/page-bundle.git
+	url = https://github.com/everyworkflow/page-bundle.git
 [submodule "everyworkflow/UrlRewriteBundle"]
 	path = everyworkflow/UrlRewriteBundle
-	url = git@github.com:everyworkflow/url-rewrite-bundle.git
+	url = https://github.com/everyworkflow/url-rewrite-bundle.git
 [submodule "everyworkflow/StaticBlockBundle"]
 	path = everyworkflow/StaticBlockBundle
-	url = git@github.com:everyworkflow/static-block-bundle.git
+	url = https://github.com/everyworkflow/static-block-bundle.git
 [submodule "everyworkflow/FrontendBundle"]
 	path = everyworkflow/FrontendBundle
-	url = git@github.com:everyworkflow/frontend-bundle.git
+	url = https://github.com/everyworkflow/frontend-bundle.git
 [submodule "everyworkflow/CmsBundle"]
 	path = everyworkflow/CmsBundle
-	url = git@github.com:everyworkflow/cms-bundle.git
+	url = https://github.com/everyworkflow/cms-bundle.git
 [submodule "everyworkflow/CustomerBundle"]
 	path = everyworkflow/CustomerBundle
-	url = git@github.com:everyworkflow/customer-bundle.git
+	url = https://github.com/everyworkflow/customer-bundle.git
 [submodule "everyworkflow/CrmBundle"]
 	path = everyworkflow/CrmBundle
-	url = git@github.com:everyworkflow/crm-bundle.git
+	url = https://github.com/everyworkflow/crm-bundle.git
 [submodule "everyworkflow/CatalogCategoryBundle"]
 	path = everyworkflow/CatalogCategoryBundle
-	url = git@github.com:everyworkflow/catalog-category-bundle.git
+	url = https://github.com/everyworkflow/catalog-category-bundle.git
 [submodule "everyworkflow/CatalogProductBundle"]
 	path = everyworkflow/CatalogProductBundle
-	url = git@github.com:everyworkflow/catalog-product-bundle.git
+	url = https://github.com/everyworkflow/catalog-product-bundle.git
 [submodule "everyworkflow/PimBundle"]
 	path = everyworkflow/PimBundle
-	url = git@github.com:everyworkflow/pim-bundle.git
+	url = https://github.com/everyworkflow/pim-bundle.git
 [submodule "everyworkflow/SalesOrderBundle"]
 	path = everyworkflow/SalesOrderBundle
-	url = git@github.com:everyworkflow/sales-order-bundle.git
+	url = https://github.com/everyworkflow/sales-order-bundle.git
 [submodule "everyworkflow/EcommerceBundle"]
 	path = everyworkflow/EcommerceBundle
-	url = git@github.com:everyworkflow/ecommerce-bundle.git
+	url = https://github.com/everyworkflow/ecommerce-bundle.git
+[submodule "everyworkflow/RemoteBundle"]
+	path = everyworkflow/RemoteBundle
+	url = https://github.com/everyworkflow/remote-bundle.git

@@ -41,6 +41,8 @@ jobs:
         run: cp project/symfony-dev-docker/github-action/php8.0/cli/Dockerfile php8.0/cli/Dockerfile
       - name: Copy php-fpm Dockerfile file
         run: cp project/symfony-dev-docker/github-action/php8.0/fpm/Dockerfile php8.0/fpm/Dockerfile
+      - name: Installing sub module
+        run: cd project/ && git submodule init && git submodule update && cd ..
       # Deploying latest build to local dev server
       - name: Build dev docker
         run: docker-compose build && docker-compose up -d
