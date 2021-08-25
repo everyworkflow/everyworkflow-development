@@ -35,14 +35,21 @@ Version: Under Development `dev-main`
 - `symfony/web-profiler-bundle`
 
 
-## Symfony setup
+## Project setup
 
 - Install symfony-dev-docker from https://github.com/readymadehost/symfony-dev-docker
+- `git clone https://github.com/everyworkflow/everyworkflow-development.git project`
+- `cd project && git submodule init && git submodule update && cd ..` to install submodules
 - For docker setup use: `cp project/symfony-dev-docker/.env ./.env`
 - `cp project/symfony-dev-docker/docker-compose.yml ./docker-compose.yml`
 - Make sure docker is configured to use php8.0 and mongodb enabled
 - `docker-compose build` to build containers
 - `docker-compose up -d` to spin up development containers
+- `docker-compose ps` to check status of development containers
+- `docker-compose exec cli bash` to get inside cli container
+
+## Symfony setup
+
 - `docker-compose exec cli bash` to get inside cli container
 - `composer install` to install composer dependencies
 - `bin/console mongo:database:drop` to drop database
