@@ -7,11 +7,10 @@ const path = require('path');
 const dotenv = require('dotenv');
 const WorkboxPlugin = require('workbox-webpack-plugin');
 const { resolveTsAliases } = require('resolve-ts-aliases');
-const { exit } = require('process');
 
 const compileEncoreList = [
     {
-        public_path: 'http://localhost:8085/frontend-build',
+        public_path: 'http://localhost:8080/frontend-build',
         manifest_path: 'frontend-build',
         output_path: 'public/frontend-build/',
         entry: {
@@ -20,7 +19,7 @@ const compileEncoreList = [
         }
     },
     {
-        public_path: 'http://localhost:8085/panel-build',
+        public_path: 'http://localhost:8080/panel-build',
         manifest_path: 'panel-build',
         output_path: 'public/panel-build/',
         entry: {
