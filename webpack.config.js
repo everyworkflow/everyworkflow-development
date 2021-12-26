@@ -7,10 +7,11 @@ const path = require('path');
 const dotenv = require('dotenv');
 const WorkboxPlugin = require('workbox-webpack-plugin');
 const { resolveTsAliases } = require('resolve-ts-aliases');
+const { exit } = require('process');
 
 const compileEncoreList = [
     {
-        public_path: 'http://localhost:8080/frontend-build',
+        public_path: 'http://localhost:8085/frontend-build',
         manifest_path: 'frontend-build',
         output_path: 'public/frontend-build/',
         entry: {
@@ -19,7 +20,7 @@ const compileEncoreList = [
         }
     },
     {
-        public_path: 'http://localhost:8080/panel-build',
+        public_path: 'http://localhost:8085/panel-build',
         manifest_path: 'panel-build',
         output_path: 'public/panel-build/',
         entry: {
@@ -118,9 +119,8 @@ compileEncoreList.forEach(encoreItem => {
             const envVariables = [
                 'API_BASE_URL',
                 'API_END_POINT',
-                'PANEL_BASE_URL',
-                'PANEL_END_POINT',
                 'MEDIA_BASE_URL',
+                'API_END_POINT_SWAP',
                 'REACT_DEBUG',
                 'REACT_REMOTE_DEBUG',
                 'REACT_REDUCER_DEBUG',

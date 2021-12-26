@@ -5,8 +5,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import * as serviceWorkerRegistration from '@EveryWorkflow/AdminPanelBundle/Admin/serviceWorkerRegistration';
-import AdminPanel from '@EveryWorkflow/AdminPanelBundle/Admin/AdminPanel';
+import * as serviceWorkerRegistration from '@EveryWorkflow/AdminPanelBundle/serviceWorkerRegistration';
+import AdminPanel from '@EveryWorkflow/AdminPanelBundle/AdminPanel';
 
 ReactDom.render(
     <AdminPanel/>,

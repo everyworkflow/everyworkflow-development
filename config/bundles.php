@@ -36,4 +36,8 @@ return [
     EveryWorkflow\PimBundle\EveryWorkflowPimBundle::class => ['all' => true],
     EveryWorkflow\SalesOrderBundle\EveryWorkflowSalesOrderBundle::class => ['all' => true],
     EveryWorkflow\EcommerceBundle\EveryWorkflowEcommerceBundle::class => ['all' => true],
+    EveryWorkflow\AuthBundle\EveryWorkflowAuthBundle::class => ['all' => true],
+    Symfony\Bundle\MonologBundle\MonologBundle::class => ['all' => true],
+    EveryWorkflow\SwaggerBundle\EveryWorkflowSwaggerBundle::class => ['all' => true],
+    EveryWorkflow\PanelBundle\EveryWorkflowPanelBundle::class => ['all' => true],
 ];

@@ -1,28 +1,44 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+controllers:
+  resource: ../src/Controller/
+  type: annotation
 
-api_login_check:
-  path: /api/login_check
+kernel:
+  resource: ../src/Kernel.php
+  type: annotation
 
-gesdinet_jwt_refresh_token:
-  path: /api/token/refresh
-  controller: gesdinet.jwtrefreshtoken::r
+EveryWorkflowFrontendBundle:
+  resource: '@EveryWorkflowFrontendBundle/Resources/config/routes.yaml'
+
+EveryWorkflowAdminPanelBundle:
+  resource: '@EveryWorkflowAdminPanelBundle/Resources/config/routes.yaml'
+
+EveryWorkflowAuthBundle:
+  resource: "@EveryWorkflowAuthBundle/Resources/config/routes.yaml"
+  prefix: /api
 
 EveryWorkflowBaseBundle:
   resource: "@EveryWorkflowBaseBundle/Resources/config/routes.yaml"
+  prefix: /api
 
 EveryWorkflowDamBundle:
   resource: "@EveryWorkflowDamBundle/Resources/config/routes.yaml"
+  prefix: /api
 
 EveryWorkflowCmsBundle:
   resource: "@EveryWorkflowCmsBundle/Resources/config/routes.yaml"
+  prefix: /api
 
 EveryWorkflowCrmBundle:
   resource: "@EveryWorkflowCrmBundle/Resources/config/routes.yaml"
+  prefix: /api
 
 EveryWorkflowPimBundle:
   resource: "@EveryWorkflowPimBundle/Resources/config/routes.yaml"
+  prefix: /api
 
 EveryWorkflowEcommerceBundle:
   resource: "@EveryWorkflowEcommerceBundle/Resources/config/routes.yaml"
+  prefix: /api
+
+EveryWorkflowSwaggerBundle:
+  resource: "@EveryWorkflowSwaggerBundle/Resources/config/routes.yaml"

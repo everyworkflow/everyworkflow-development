@@ -21,7 +21,8 @@
         "sourceMap": true,
         "baseUrl": "./",
         "paths": {
-            "@EveryWorkflow/CoreBundle/*": ["everyworkflow/CoreBundle/Resources/assets/*"],
+            "@EveryWorkflow/PanelBundle/*": ["everyworkflow/PanelBundle/Resources/assets/*"],
+            "@EveryWorkflow/AuthBundle/*": ["everyworkflow/AuthBundle/Resources/assets/*"],
             "@EveryWorkflow/DataFormBundle/*": ["everyworkflow/DataFormBundle/Resources/assets/*"],
             "@EveryWorkflow/DataGridBundle/*": ["everyworkflow/DataGridBundle/Resources/assets/*"],
             "@EveryWorkflow/EavBundle/*": ["everyworkflow/EavBundle/Resources/assets/*"],
@@ -29,14 +30,15 @@
             "@EveryWorkflow/PageBuilderBundle/*": ["everyworkflow/PageBuilderBundle/Resources/assets/*"],
             "@EveryWorkflow/StaticBlockBundle/*": ["everyworkflow/StaticBlockBundle/Resources/assets/*"],
             "@EveryWorkflow/PageBundle/*": ["everyworkflow/PageBundle/Resources/assets/*"],
+            "@EveryWorkflow/ScopeBundle/*": ["everyworkflow/ScopeBundle/Resources/assets/*"],
             "@EveryWorkflow/UrlRewriteBundle/*": ["everyworkflow/UrlRewriteBundle/Resources/assets/*"],
             "@EveryWorkflow/UserBundle/*": ["everyworkflow/UserBundle/Resources/assets/*"],
-            "@EveryWorkflow/AdminPanelBundle/*": ["everyworkflow/AdminPanelBundle/Resources/assets/*"],
-            "@EveryWorkflow/FrontendBundle/*": ["everyworkflow/FrontendBundle/Resources/assets/*"],
             "@EveryWorkflow/CustomerBundle/*": ["everyworkflow/CustomerBundle/Resources/assets/*"],
             "@EveryWorkflow/CatalogCategoryBundle/*": ["everyworkflow/CatalogCategoryBundle/Resources/assets/*"],
             "@EveryWorkflow/CatalogProductBundle/*": ["everyworkflow/CatalogProductBundle/Resources/assets/*"],
-            "@EveryWorkflow/SalesOrderBundle/*": ["everyworkflow/SalesOrderBundle/Resources/assets/*"]
+            "@EveryWorkflow/SalesOrderBundle/*": ["everyworkflow/SalesOrderBundle/Resources/assets/*"],
+            "@EveryWorkflow/AdminPanelBundle/*": ["everyworkflow/AdminPanelBundle/Resources/assets/*"],
+            "@EveryWorkflow/FrontendBundle/*": ["everyworkflow/FrontendBundle/Resources/assets/*"]
         }
     },
     "include": [

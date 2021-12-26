@@ -38,8 +38,8 @@ Version: Under Development `dev-main`
 ## Project setup
 
 - Install symfony-dev-docker from https://github.com/readymadehost/symfony-dev-docker
-- `git clone https://github.com/everyworkflow/everyworkflow-development.git project`
-- `cd project && git submodule init && git submodule update && cd ..` to install submodules
+- `git clone https://github.com/everyworkflow/everyworkflow-development.git project --recursive`
+- `cd project && git submodule update --recursive --remote && cd ..` to update submodules
 - For docker setup use: `cp project/symfony-dev-docker/.env ./.env`
 - `cp project/symfony-dev-docker/docker-compose.yml ./docker-compose.yml`
 - Make sure docker is configured to use php8.0 and mongodb enabled
