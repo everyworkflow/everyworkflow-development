@@ -82,3 +82,12 @@
 [submodule "everyworkflow/RemoteBundle"]
 	path = everyworkflow/RemoteBundle
 	url = https://github.com/everyworkflow/remote-bundle.git
+[submodule "everyworkflow/PanelBundle"]
+	path = everyworkflow/PanelBundle
+	url = https://github.com/everyworkflow/panel-bundle.git
+[submodule "everyworkflow/AuthBundle"]
+	path = everyworkflow/AuthBundle
+	url = https://github.com/everyworkflow/auth-bundle.git
+[submodule "everyworkflow/SwaggerBundle"]
+	path = everyworkflow/SwaggerBundle
+	url = https://github.com/everyworkflow/swagger-bundle.git
