@@ -42,7 +42,6 @@
         }
     },
     "include": [
-        "assets",
-        "everyworkflow/**/*.tsx"
+        "assets"
     ]
 }
