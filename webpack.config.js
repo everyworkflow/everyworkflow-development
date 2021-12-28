@@ -10,7 +10,7 @@ const { resolveTsAliases } = require('resolve-ts-aliases');
 
 const compileEncoreList = [
     {
-        public_path: 'http://localhost:8080/build-frontend',
+        public_path: 'http://localhost:8085/build-frontend',
         manifest_path: 'build-frontend',
         output_path: 'public/build-frontend/',
         entry: {
@@ -19,7 +19,7 @@ const compileEncoreList = [
         }
     },
     {
-        public_path: 'http://localhost:8080/build-admin-panel',
+        public_path: 'http://localhost:8085/build-admin-panel',
         manifest_path: 'build-admin-panel',
         output_path: 'public/build-admin-panel/',
         entry: {
