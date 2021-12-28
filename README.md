@@ -16,7 +16,6 @@ Version: Under Development `dev-main`
 - `nelmio/cors-bundle` - Cors fixes
 - `mongodb/mongodb` - Mongodb php core extension library
 - `nesbot/carbon` - DateTime helper package
-- `opis/json-schema` - Data schema validation
 - `everyworkflow/base` - Base bundle package
 - `everyworkflow/dam` - Dam bundle package
 - `everyworkflow/cms` - Cms bundle package
