@@ -38,9 +38,9 @@ jobs:
       - name: Setting up docker environment
         run: cp project/symfony-dev-docker/.env .env && cp project/symfony-dev-docker/docker-compose.yml docker-compose.yml
       - name: Copy php-cli Dockerfile file
-        run: cp project/symfony-dev-docker/github-action/php8.0/cli/Dockerfile php8.0/cli/Dockerfile
+        run: cp project/symfony-dev-docker/github-action/php8.1/cli/Dockerfile php8.1/cli/Dockerfile
       - name: Copy php-fpm Dockerfile file
-        run: cp project/symfony-dev-docker/github-action/php8.0/fpm/Dockerfile php8.0/fpm/Dockerfile
+        run: cp project/symfony-dev-docker/github-action/php8.1/fpm/Dockerfile php8.1/fpm/Dockerfile
       - name: Installing sub module
         run: cd project/ && git submodule init && git submodule update && cd ..
       # Deploying latest build to local dev server
