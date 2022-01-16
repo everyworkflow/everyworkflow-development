@@ -10,16 +10,16 @@ const { resolveTsAliases } = require('resolve-ts-aliases');
 
 const compileEncoreList = [
     {
-        public_path: 'http://localhost:8085/build-frontend',
-        manifest_path: 'build-frontend',
-        output_path: 'public/build-frontend/',
+        public_path: 'http://localhost:8080/build-front-panel',
+        manifest_path: 'build-front-panel',
+        output_path: 'public/build-front-panel/',
         entry: {
-            name: 'frontend',
-            src: './assets/Frontend.tsx'
+            name: 'front_panel',
+            src: './assets/FrontPanel.tsx'
         }
     },
     {
-        public_path: 'http://localhost:8085/build-admin-panel',
+        public_path: 'http://localhost:8080/build-admin-panel',
         manifest_path: 'build-admin-panel',
         output_path: 'public/build-admin-panel/',
         entry: {
@@ -81,9 +81,10 @@ compileEncoreList.forEach(encoreItem => {
         })
 
         // enables Sass/SCSS support
-        .enableSassLoader()
+        // .enableSassLoader()
 
         // processes files ending in .less
+        // .enableLessLoader()
         .enableLessLoader((options) => {
             options.lessOptions = {
                 javascriptEnabled: true,
@@ -142,7 +143,12 @@ compileEncoreList.forEach(encoreItem => {
         Encore.enableSingleRuntimeChunk();
     } else {
         Encore.splitEntryChunks()
-            .disableSingleRuntimeChunk();
+            .disableSingleRuntimeChunk()
+            .configureSplitChunks(function(splitChunks) {
+                // change the configuration
+                splitChunks.minSize = 500000;
+                splitChunks.maxSize = 1000000;
+            });
     }
 
     const config = Encore.getWebpackConfig();

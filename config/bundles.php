@@ -27,7 +27,7 @@ return [
     EveryWorkflow\StaticBlockBundle\EveryWorkflowStaticBlockBundle::class => ['all' => true],
     EveryWorkflow\PageBundle\EveryWorkflowPageBundle::class => ['all' => true],
     EveryWorkflow\PageBuilderBundle\EveryWorkflowPageBuilderBundle::class => ['all' => true],
-    EveryWorkflow\FrontendBundle\EveryWorkflowFrontendBundle::class => ['all' => true],
+    EveryWorkflow\FrontPanelBundle\EveryWorkflowFrontPanelBundle::class => ['all' => true],
     EveryWorkflow\CmsBundle\EveryWorkflowCmsBundle::class => ['all' => true],
     EveryWorkflow\CustomerBundle\EveryWorkflowCustomerBundle::class => ['all' => true],
     EveryWorkflow\CrmBundle\EveryWorkflowCrmBundle::class => ['all' => true],
@@ -40,4 +40,5 @@ return [
     Symfony\Bundle\MonologBundle\MonologBundle::class => ['all' => true],
     EveryWorkflow\SwaggerBundle\EveryWorkflowSwaggerBundle::class => ['all' => true],
     EveryWorkflow\PanelBundle\EveryWorkflowPanelBundle::class => ['all' => true],
+    EveryWorkflow\MenuBundle\EveryWorkflowMenuBundle::class => ['all' => true],
 ];

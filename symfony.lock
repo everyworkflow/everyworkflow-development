@@ -86,13 +86,16 @@
     "everyworkflow/ecommerce-bundle": {
         "version": "dev-main"
     },
-    "everyworkflow/frontend-bundle": {
-        "version": "dev-main"
+    "everyworkflow/front-panel-bundle": {
+        "version": "dev-205f80f2bba3ed215707592f55b515ba4266508f"
     },
     "everyworkflow/import-export-bundle": {
         "version": "dev-main"
     },
     "everyworkflow/media-manager-bundle": {
+        "version": "dev-main"
+    },
+    "everyworkflow/menu-bundle": {
         "version": "dev-main"
     },
     "everyworkflow/mongo-bundle": {
@@ -208,15 +211,6 @@
     },
     "openlss/lib-array2xml": {
         "version": "1.0.0"
-    },
-    "opis/json-schema": {
-        "version": "1.1.0"
-    },
-    "opis/string": {
-        "version": "2.0.0"
-    },
-    "opis/uri": {
-        "version": "1.1.0"
     },
     "pdepend/pdepend": {
         "version": "2.10.0"

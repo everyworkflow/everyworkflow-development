@@ -5,11 +5,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import * as serviceWorkerRegistration from '@EveryWorkflow/FrontendBundle/serviceWorkerRegistration';
-import Frontend from "@EveryWorkflow/FrontendBundle/Frontend";
+import * as serviceWorkerRegistration from '@EveryWorkflow/FrontPanelBundle/serviceWorkerRegistration';
+import FrontPanel from "@EveryWorkflow/FrontPanelBundle/FrontPanel";
 
 ReactDom.render(
-    <Frontend/>,
+    <FrontPanel/>,
     document.getElementById('root')
 );
 
