@@ -6,34 +6,6 @@ A symfony based every workflow platform
 Version: Under Development `dev-main`
 
 
-## Composer dependencies
-
-- `symfony` - Symfony 5 framework and components
-- `symfony/asset` - To manage asset files
-- `symfony/webpack-encore-bundle` - To manage SPA/PWA(s)
-- `doctrine/annotations` - Doctrine annotations
-- `twig/twig` - Twig templating
-- `nelmio/cors-bundle` - Cors fixes
-- `mongodb/mongodb` - Mongodb php core extension library
-- `nesbot/carbon` - DateTime helper package
-- `everyworkflow/base` - Base bundle package
-- `everyworkflow/dam` - Dam bundle package
-- `everyworkflow/cms` - Cms bundle package
-- `everyworkflow/crm` - Crm bundle package
-- `everyworkflow/pim` - Pim bundle package
-
-
-## Composer dev dependencies
-
-- `phpmd/phpmd`
-- `friendsofphp/php-cs-fixer`
-- `squizlabs/php_codesniffer`
-- `symfony/phpunit-bridge`
-- `symfony/debug-bundle`
-- `symfony/var-dumper`
-- `symfony/web-profiler-bundle`
-
-
 ## Project setup
 
 - Install symfony-dev-docker from https://github.com/readymadehost/symfony-dev-docker
@@ -46,6 +18,8 @@ Version: Under Development `dev-main`
 - `docker-compose up -d` to spin up development containers
 - `docker-compose ps` to check status of development containers
 - `docker-compose exec cli bash` to get inside cli container
+- `bin/console lexik:jwt:generate-keypair` to generate JWT keypair
+
 
 ## Symfony setup
 
@@ -62,12 +36,13 @@ Version: Under Development `dev-main`
 - `yarn build` for production build
 - `yarn watch` to watch file changes for development
 - `yarn watch:admin_panel`
-- `yarn watch:frontend`
+- `yarn watch:front_panel`
 
 React app URL:-
 
-- Frontend: http://localhost:8080
+- Front Panel: http://localhost:8080
 - Admin Panel: http://localhost:8080/admin/
+
 
 ## Tests
 

@@ -895,7 +895,7 @@
             "dist": {
                 "type": "path",
                 "url": "everyworkflow/FrontPanelBundle",
-                "reference": "912d75d7ee7b4c5b9b4034cbf38282ccc2922d27"
+                "reference": "7cb7645501382a5b14617df7463ef8fc00b7dff1"
             },
             "require": {
                 "everyworkflow/core-bundle": "dev-main",
@@ -1020,7 +1020,7 @@
             "dist": {
                 "type": "path",
                 "url": "everyworkflow/MenuBundle",
-                "reference": "0c363466a13646074898ec67ff3f497ae853b977"
+                "reference": "5d5b859bace046c3a57283a44c8fb71aa8c018dd"
             },
             "require": {
                 "everyworkflow/eav-bundle": "dev-main"
