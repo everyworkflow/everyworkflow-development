@@ -4,6 +4,8 @@
 /test-html
 /public/test-html
 
+/public/media
+
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php

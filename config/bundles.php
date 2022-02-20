@@ -9,6 +9,7 @@ return [
     Symfony\Bundle\TwigBundle\TwigBundle::class => ['all' => true],
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true],
     Symfony\Bundle\WebProfilerBundle\WebProfilerBundle::class => ['dev' => true, 'test' => true],
+    Liip\ImagineBundle\LiipImagineBundle::class => ['all' => true],
     EveryWorkflow\CoreBundle\EveryWorkflowCoreBundle::class => ['all' => true],
     EveryWorkflow\MongoBundle\EveryWorkflowMongoBundle::class => ['all' => true],
     EveryWorkflow\DataFormBundle\EveryWorkflowDataFormBundle::class => ['all' => true],

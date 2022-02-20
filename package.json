@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "@tinymce/tinymce-react": "^3.13.0",
     "@types/react": "^17.0.3",
     "@types/react-color": "^3.0.6",
     "@types/react-dom": "^17.0.11",
