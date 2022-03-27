@@ -141,7 +141,7 @@
         "version": "1.5.1"
     },
     "friendsofphp/php-cs-fixer": {
-        "version": "9999999.9999999",
+        "version": "3.4",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "master",
