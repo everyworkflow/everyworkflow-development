@@ -6,6 +6,14 @@ A symfony based every workflow platform
 Version: Under Development `dev-main`
 
 
+## Update
+
+We have separate server and frontend repository for development.
+
+- https://github.com/everyworkflow/everyworkflow-server
+- https://github.com/everyworkflow/everyworkflow-frontend
+
+
 ## Project setup
 
 - Install symfony-dev-docker from https://github.com/readymadehost/symfony-dev-docker
