@@ -8,10 +8,10 @@ Version: Under Development `dev-main`
 
 ## Update
 
-We have separate server and frontend repository for development.
+We have separate backend and frontend repository for development.
 
-- https://github.com/everyworkflow/everyworkflow-server
-- https://github.com/everyworkflow/everyworkflow-frontend
+- https://github.com/everyworkflow/backend
+- https://github.com/everyworkflow/frontend
 
 
 ## Project setup
